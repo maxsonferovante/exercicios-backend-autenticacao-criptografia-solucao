@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  postgres:
+    container_name: catalogo_pokemons
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: cubosacademy
+      POSTGRES_PASSWORD: cubosacademy
+      POSTGRES_DB: catalogo_pokemons
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
