@@ -32,6 +32,8 @@ const atualizarApelidoDoPokemonController = async (req, res) => {
     }
 };
 
+console.log('teste')
+
 const buscarPokemonPorIdController = async (req, res) => {
     const { id } = req.params;
     const pokemon = await buscarPokemonPorId(id);
